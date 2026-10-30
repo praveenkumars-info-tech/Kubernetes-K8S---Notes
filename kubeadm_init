@@ -2,11 +2,11 @@
  Prepare Hostname, Firewall and SELinux
  
 # hostnamectl set-hostname master-node
-# cat <<EOF>> /etc/hosts
-10.128.0.27 master-node
-10.128.0.29 node-1 worker-node-1
-10.128.0.30 node-2 worker-node-2
-EOF
+Set the Master and Worker Private IP in hosts
+# vi /etc/hosts
+master 192.168.10.151
+worker 192.168.10.186
+
 -----------------
  #disable SElinux and update your firewall rules.
  
